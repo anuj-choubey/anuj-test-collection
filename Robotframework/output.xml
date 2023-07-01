@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230424 15:33:22.489" rpa="false" schemaversion="3">
+<suite id="s1" name="Test2" source="D:\Users\Anuj Choubey\Robotframework\Automation\test2.robot">
+<test id="s1-t1" name="order" line="8">
+<kw name="insideorder">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230424 15:33:22.925" level="INFO">Opening browser 'chrome' to base url 'http://localhost/centaur/user/placedorders'.</msg>
+<status status="PASS" starttime="20230424 15:33:22.924" endtime="20230424 15:33:26.975"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230424 15:33:26.975" endtime="20230424 15:33:27.128"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:empid</arg>
+<arg>mis1011</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230424 15:33:27.130" level="INFO">Typing text 'mis1011' into text field 'name:empid'.</msg>
+<status status="PASS" starttime="20230424 15:33:27.128" endtime="20230424 15:33:27.317"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>Q!W@e3r4t5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230424 15:33:27.318" level="INFO">Typing text 'Q!W@e3r4t5' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230424 15:33:27.317" endtime="20230424 15:33:27.443"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:28.443" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230424 15:33:27.443" endtime="20230424 15:33:28.443"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:btn-primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230424 15:33:28.446" level="INFO">Clicking button 'class:btn-primary'.</msg>
+<status status="PASS" starttime="20230424 15:33:28.444" endtime="20230424 15:33:29.868"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:30.869" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230424 15:33:29.869" endtime="20230424 15:33:30.869"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost/centaur/user/placedorders</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230424 15:33:30.871" level="INFO">Opening url 'http://localhost/centaur/user/placedorders'</msg>
+<status status="PASS" starttime="20230424 15:33:30.871" endtime="20230424 15:33:31.726"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:34.728" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230424 15:33:31.726" endtime="20230424 15:33:34.728"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>Xpath://body/div[2]/div[1]/section[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230424 15:33:34.730" level="INFO">Selecting options from selection list 'Xpath://body/div[2]/div[1]/section[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]' by index 2.</msg>
+<status status="PASS" starttime="20230424 15:33:34.728" endtime="20230424 15:33:35.194"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:37.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230424 15:33:35.195" endtime="20230424 15:33:37.195"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class:prd_name</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230424 15:33:37.195" level="INFO">Selecting options from selection list 'class:prd_name' by index 1.</msg>
+<status status="PASS" starttime="20230424 15:33:37.195" endtime="20230424 15:33:37.302"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:39.304" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230424 15:33:37.302" endtime="20230424 15:33:39.304"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class:model</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230424 15:33:39.304" level="INFO">Selecting options from selection list 'class:model' by index 0.</msg>
+<status status="PASS" starttime="20230424 15:33:39.304" endtime="20230424 15:33:39.358"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:41.360" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230424 15:33:39.359" endtime="20230424 15:33:41.360"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class:wattage</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230424 15:33:41.360" level="INFO">Selecting options from selection list 'class:wattage' by index 1.</msg>
+<status status="PASS" starttime="20230424 15:33:41.360" endtime="20230424 15:33:41.484"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:42.485" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230424 15:33:41.484" endtime="20230424 15:33:42.485"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class:shape</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230424 15:33:42.489" level="INFO">Selecting options from selection list 'class:shape' by index 0.</msg>
+<status status="PASS" starttime="20230424 15:33:42.485" endtime="20230424 15:33:42.680"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class:color</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230424 15:33:42.681" level="INFO">Selecting options from selection list 'class:color' by index 1.</msg>
+<status status="PASS" starttime="20230424 15:33:42.680" endtime="20230424 15:33:43.028"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 15:33:46.029" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230424 15:33:43.028" endtime="20230424 15:33:46.029"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class:discount</arg>
+<arg>40</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230424 15:33:46.031" level="INFO">Typing text '40' into text field 'class:discount'.</msg>
+<status status="PASS" starttime="20230424 15:33:46.029" endtime="20230424 15:33:46.338"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class:quantity</arg>
+<arg>30</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230424 15:33:46.341" level="INFO">Typing text '30' into text field 'class:quantity'.</msg>
+<status status="PASS" starttime="20230424 15:33:46.339" endtime="20230424 15:33:46.510"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://button[@id='order']</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230424 15:33:46.510" level="FAIL">Keyword 'SeleniumLibrary.Element Should Contain' expected 2 to 4 arguments, got 1.</msg>
+<status status="FAIL" starttime="20230424 15:33:46.510" endtime="20230424 15:33:46.510"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://button[@id='order']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230424 15:33:46.511" endtime="20230424 15:33:46.511"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230424 15:33:46.511" endtime="20230424 15:33:46.511"/>
+</kw>
+<status status="FAIL" starttime="20230424 15:33:22.923" endtime="20230424 15:33:46.511"/>
+</kw>
+<status status="FAIL" starttime="20230424 15:33:22.921" endtime="20230424 15:33:46.511">Keyword 'SeleniumLibrary.Element Should Contain' expected 2 to 4 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20230424 15:33:22.493" endtime="20230424 15:33:46.512"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test2">Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
